@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <header>
+            <h1>🎬 Movie Explorer</h1>
+            <p id="info">Recupero dati dal server</p>
+        </header>
+        
+        <div id="grid" class="movie-grid"></div>
+    </div>
+
+    <script>
+        // Funzione asincrona per scaricare i dati dall'API del server
+        async function getMovies() {
+            // Chiamata HTTP al nostro server
+            const res = await fetch('/api/film');
+            // Trasformiamo la risposta grezza in un array di oggetti
+            const movies = await res.json();
+            
+            // Aggiorniamo il sottotitolo con il numero totale di film
+            document.getElementById('info').innerText = `${movies.length} titoli caricati`;
+            
+            const grid = document.getElementById('grid');
+            
+            // Cicliamo su ogni film ricevuto
+            movies.forEach(m => {
+                // Creiamo un elemento "div" per ogni film (la nostra card)
+                const card = document.createElement('div');
+                // Assegniamo la classe generale e quella specifica del formato (per il colore)
+                card.className = `card ${m.tipo.toLowerCase()}`;
+                
+                // Inseriamo il contenuto HTML dentro la card
+                card.innerHTML = `
+                    <div class="content">
+                        <h3>${m.titolo}</h3>
+                        <p>Regia: ${m.regista}</p>
+                    </div>
+                    <span class="source">${m.tipo}</span>
+                `;
+                // Aggiungiamo la card alla griglia visibile
+                grid.appendChild(card);
+            });
+        }
+        
+        // Eseguiamo la funzione all'apertura della pagina
+        getMovies();
+    </script>
+</body>
+</html>

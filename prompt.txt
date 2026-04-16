@@ -1,0 +1,14 @@
+1. Per iniziare (La struttura)
+"devo fare un'app con Node ed Express che legge dei file e li mostra su una pagina web. Voglio che la struttura sia semplice: una cartella data per i file e una public per il sito. Mi scrivi lo scheletro del file server.js e mi dici come configurare il progetto?"
+
+2. Per i dati (Il contenuto)
+"Adesso mi servono i dati. Crea 3 file nella cartella data: un film.json, un film.csv e un film.xml. Mettici dentro una decina di film famosi per ogni file, con titolo e regista. Per l'XML usa una struttura pulita tipo <cineteca><film>. Grazie!"
+
+3. Per la logica del Server (Invece di "crealo", chiedi "aiutami a finirlo")
+"Ho iniziato a scrivere la rotta /api/film in server.js per leggere i file, ma mi sto incartando con le funzioni asincrone, specialmente per far aspettare il server che finisca di leggere il CSV prima di inviare la risposta. Mi aiuti a sistemare il codice in modo che metta insieme i dati di JSON, XML e CSV in un unico array? Vorrei anche aggiungere un'etichetta 'tipo' a ogni oggetto per non fare confusione. Puoi darmi una mano a chiudere questa funzione?"
+
+4. Per l'interfaccia (Invece di "fammi", chiedi "migliora")
+"Ho creato un file index.html con una griglia di base, però adesso non so come collegarla ai dati del server. Ho provato a usare fetch() ma non riesco a visualizzare le card correttamente nella pagina. Mi dai una mano a scrivere la parte di JavaScript che cicla sui dati e crea gli elementi HTML? Vorrei che venisse fuori una cosa pulita che mostri titolo e regista. Cosa mi consigli per rendere il caricamento automatico all'apertura?"
+
+5. Per l'estetica (CSS)
+"L'app funziona ma è brutta. Mi scrivi un style.css moderno? Mi piace il tema scuro tipo Netflix. Fai in modo che i film stiano su una griglia e che le card abbiano un bordo di colore diverso a seconda se sono JSON, CSV o XML. Metti anche un effetto carino quando ci passo sopra col mouse."

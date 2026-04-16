@@ -1,0 +1,12 @@
+<cineteca>
+    <film><titolo>Star Wars: Una Nuova Speranza</titolo><regista>George Lucas</regista></film>
+    <film><titolo>Matrix</titolo><regista>Lana e Lilly Wachowski</regista></film>
+    <film><titolo>Avatar</titolo><regista>James Cameron</regista></film>
+    <film><titolo>Il Signore degli Anelli: La Compagnia dell'Anello</titolo><regista>Peter Jackson</regista></film>
+    <film><titolo>Ritorno al Futuro</titolo><regista>Robert Zemeckis</regista></film>
+    <film><titolo>Jurassic Park</titolo><regista>Steven Spielberg</regista></film>
+    <film><titolo>La Città Incantata</titolo><regista>Hayao Miyazaki</regista></film>
+    <film><titolo>Toy Story</titolo><regista>John Lasseter</regista></film>
+    <film><titolo>Interstellar</titolo><regista>Christopher Nolan</regista></film>
+    <film><titolo>Dune</titolo><regista>Denis Villeneuve</regista></film>
+</cineteca>
